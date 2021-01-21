@@ -32,13 +32,19 @@
     }
   ];
 
-  const btn = document.getElementById("generate-btn");
+  /*
+    make button variable
+    attach event listener to button with 'click', function() {}
+    inside of function, create randomizer for each element in the quotes array, assign it to variable
+    let the author and quote change text based on which element is selected from the quotes array
+  */
+  const button = document.getElementById("generate-btn");
 
-  btn.addEventListener("click", function() {
-    let random = Math.floor(Math.random() * quotes.length);
-    console.log(random);
+  button.addEventListener('click', function() {
+    let random = Math.floor(Math.random()*quotes.length);
 
-    document.getElementById("quote").textContent = quotes[random].quote;
-    document.querySelector(".author").textContent = quotes[random].author;
+    document.querySelector('.author').textContent = quotes[random].author;
+    document.getElementById('quote').textContent = quotes[random].quote;
+
   });
 })();
