@@ -36,7 +36,7 @@
     make button variable
     attach event listener to button with 'click', function() {}
     inside of function, create randomizer for each element in the quotes array, assign it to variable
-    let the author and quote change text based on which element is selected from the quotes array
+    let the author and quote change text base on which element is selected from the quotes array
   */
   const button = document.getElementById("generate-btn");
 
